@@ -1,0 +1,81 @@
+["resource_empty_jar"] = {
+    label = "Empty Jar",
+    weight = 0,
+    stack = true,
+    close = true
+},
+["marijuana_jar1"] = {
+    label = "Marijuana Jar",
+    weight = 50,
+    stack = true,
+    close = true,
+    buttons = {
+        {
+            label = "Sell Drug",
+            action = function(slot)
+                TriggerServerEvent('void-drugselling:sellSpecificDrug', 'marijuana_jar1')
+            end
+        }
+    }
+},
+
+["coke_baggy"] = {
+    label = "Cocaine Baggy",
+    weight = 50,
+    stack = true,
+    close = true,
+    buttons = {
+        {
+            label = "Sell Drug",
+            action = function(slot)
+                TriggerServerEvent('void-drugselling:sellSpecificDrug', 'coke_baggy')
+            end
+        }
+    }
+},
+
+["meth_baggy"] = {
+    label = "Meth Baggy",
+    weight = 50,
+    stack = true,
+    close = true,
+    buttons = {
+        {
+            label = "Sell Drug",
+            action = function(slot)
+                TriggerServerEvent('void-drugselling:sellSpecificDrug', 'meth_baggy')
+            end
+        }
+    }
+},
+
+["mega_death"] = {
+    label = "Mega Death",
+    weight = 50,
+    stack = true,
+    close = true,
+    buttons = {
+        {
+            label = "Sell Drug",
+            action = function(slot)
+                TriggerServerEvent('void-drugselling:sellSpecificDrug', 'mega_death')
+            end
+        }
+    }
+},
+-- Add MORE LIKE THIS
+
+["CUSTOMITEM"] = { -- spawn code
+    label = "CUSTOMITEM", -- label
+    weight = 50,
+    stack = true,
+    close = true,
+    buttons = {
+        {
+            label = "Sell Drug",
+            action = function(slot)
+                TriggerServerEvent('void-drugselling:sellSpecificDrug', 'CUSTOMITEM')-- same as spawncode
+            end
+        }
+    }
+},
